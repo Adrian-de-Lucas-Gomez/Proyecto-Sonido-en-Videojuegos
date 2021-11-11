@@ -1887,7 +1887,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 98941113}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 24e3628eed1be264eb451414f34d2f3c, type: 3}
@@ -2112,6 +2112,29 @@ MonoBehaviour:
   highlightOnHover: 1
   hideHighlight: []
   hoverPriority: 0
+--- !u!114 &98941122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 98941113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1
 --- !u!4 &100834951 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: d734e0f1e8152164f912667b484f1bb9, type: 3}
@@ -3292,6 +3315,7 @@ Light:
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
 --- !u!1 &149142543
@@ -4118,6 +4142,7 @@ Light:
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
 --- !u!1001 &221677144
@@ -4856,6 +4881,7 @@ Light:
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
 --- !u!1 &290134416 stripped
@@ -4870,7 +4896,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 290134416}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 22f8b81cfd296424a89ca35842cb5bae, type: 3}
@@ -4973,6 +4999,29 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 89d3f58e76f347d40a9626674690672a, type: 3}
+--- !u!114 &290134422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 290134416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1
 --- !u!1001 &291263512
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6570,6 +6619,7 @@ Light:
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
 --- !u!1 &397804853
@@ -7122,7 +7172,12 @@ PrefabInstance:
       propertyPath: m_Center.y
       value: 0.65923643
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 82000013955136614, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 8194540, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
 --- !u!1 &470435282 stripped
 GameObject:
@@ -7376,6 +7431,7 @@ Light:
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
 --- !u!1001 &480531550
@@ -7407,7 +7463,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4786487018906418, guid: b540476b589f10f46abb067b58e9e698, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.997555
+      value: 12.877
       objectReference: {fileID: 0}
     - target: {fileID: 4786487018906418, guid: b540476b589f10f46abb067b58e9e698, type: 3}
       propertyPath: m_LocalPosition.y
@@ -7415,7 +7471,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4786487018906418, guid: b540476b589f10f46abb067b58e9e698, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.5385971
+      value: 0.408
       objectReference: {fileID: 0}
     - target: {fileID: 4786487018906418, guid: b540476b589f10f46abb067b58e9e698, type: 3}
       propertyPath: m_LocalRotation.w
@@ -7802,6 +7858,7 @@ Light:
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
 --- !u!1001 &488200566
@@ -8387,6 +8444,7 @@ Light:
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
 --- !u!1001 &517710704
@@ -8694,6 +8752,7 @@ Light:
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
 --- !u!1 &525102317
@@ -9341,6 +9400,7 @@ Light:
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
 --- !u!1001 &553913290
@@ -9871,7 +9931,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4592001905311546, guid: acbc7238c9c191d4d8aff4ab3a575a69, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 15.123372
+      value: 15.132
       objectReference: {fileID: 0}
     - target: {fileID: 4592001905311546, guid: acbc7238c9c191d4d8aff4ab3a575a69, type: 3}
       propertyPath: m_LocalPosition.z
@@ -10340,6 +10400,7 @@ Light:
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
 --- !u!4 &625826048
@@ -10798,11 +10859,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4285025707697314, guid: 2a79468e213672b4984d41d9f26ab16a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 15.1180725
+      value: 15.192
       objectReference: {fileID: 0}
     - target: {fileID: 4285025707697314, guid: 2a79468e213672b4984d41d9f26ab16a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.23870277
+      value: 0.064
       objectReference: {fileID: 0}
     - target: {fileID: 4285025707697314, guid: 2a79468e213672b4984d41d9f26ab16a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -11516,7 +11577,7 @@ ParticleSystem:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 708625749}
-  serializedVersion: 6
+  serializedVersion: 7
   lengthInSec: 5
   simulationSpeed: 1
   stopAction: 0
@@ -15088,19 +15149,20 @@ ParticleSystem:
     range: {x: 0, y: 1}
   CollisionModule:
     enabled: 0
-    serializedVersion: 3
+    serializedVersion: 4
     type: 0
     collisionMode: 0
     colliderForce: 0
     multiplyColliderForceByParticleSize: 0
     multiplyColliderForceByParticleSpeed: 0
     multiplyColliderForceByCollisionAngle: 1
-    plane0: {fileID: 0}
-    plane1: {fileID: 0}
-    plane2: {fileID: 0}
-    plane3: {fileID: 0}
-    plane4: {fileID: 0}
-    plane5: {fileID: 0}
+    m_Planes:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
     m_Dampen:
       serializedVersion: 2
       minMaxState: 0
@@ -15274,17 +15336,20 @@ ParticleSystem:
     interiorCollisions: 0
   TriggerModule:
     enabled: 0
-    collisionShape0: {fileID: 0}
-    collisionShape1: {fileID: 0}
-    collisionShape2: {fileID: 0}
-    collisionShape3: {fileID: 0}
-    collisionShape4: {fileID: 0}
-    collisionShape5: {fileID: 0}
+    serializedVersion: 2
     inside: 1
     outside: 0
     enter: 0
     exit: 0
+    colliderQueryMode: 0
     radiusScale: 1
+    primitives:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
   SubModule:
     serializedVersion: 2
     enabled: 0
@@ -17579,15 +17644,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4786487018906418, guid: b540476b589f10f46abb067b58e9e698, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.997555
+      value: 13.006
       objectReference: {fileID: 0}
     - target: {fileID: 4786487018906418, guid: b540476b589f10f46abb067b58e9e698, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 15.160772
+      value: 15.255
       objectReference: {fileID: 0}
     - target: {fileID: 4786487018906418, guid: b540476b589f10f46abb067b58e9e698, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.5385971
+      value: 0.294
       objectReference: {fileID: 0}
     - target: {fileID: 4786487018906418, guid: b540476b589f10f46abb067b58e9e698, type: 3}
       propertyPath: m_LocalRotation.w
@@ -18143,6 +18208,7 @@ Light:
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
 --- !u!1 &850724943
@@ -18235,6 +18301,7 @@ Light:
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
 --- !u!4 &852504351 stripped
@@ -18537,6 +18604,7 @@ Light:
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
 --- !u!1001 &867057439
@@ -19032,11 +19100,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4285025707697314, guid: 2a79468e213672b4984d41d9f26ab16a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 15.1180725
+      value: 15.291
       objectReference: {fileID: 0}
     - target: {fileID: 4285025707697314, guid: 2a79468e213672b4984d41d9f26ab16a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.23870277
+      value: 0.08
       objectReference: {fileID: 0}
     - target: {fileID: 4285025707697314, guid: 2a79468e213672b4984d41d9f26ab16a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -20757,11 +20825,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4285025707697314, guid: 2a79468e213672b4984d41d9f26ab16a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 15.1180725
+      value: 15.338
       objectReference: {fileID: 0}
     - target: {fileID: 4285025707697314, guid: 2a79468e213672b4984d41d9f26ab16a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.23870277
+      value: 0.104
       objectReference: {fileID: 0}
     - target: {fileID: 4285025707697314, guid: 2a79468e213672b4984d41d9f26ab16a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -21265,15 +21333,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4285025707697314, guid: 2a79468e213672b4984d41d9f26ab16a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.109555
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4285025707697314, guid: 2a79468e213672b4984d41d9f26ab16a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 15.1180725
+      value: 15.229
       objectReference: {fileID: 0}
     - target: {fileID: 4285025707697314, guid: 2a79468e213672b4984d41d9f26ab16a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.23870277
+      value: 0.069
       objectReference: {fileID: 0}
     - target: {fileID: 4285025707697314, guid: 2a79468e213672b4984d41d9f26ab16a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -22763,7 +22831,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1135684009}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a935ff234f050dc4481ddab82ea7560a, type: 3}
@@ -22988,6 +23056,29 @@ MonoBehaviour:
   highlightOnHover: 1
   hideHighlight: []
   hoverPriority: 0
+--- !u!114 &1135684017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1135684009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1
 --- !u!1001 &1138862654
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25375,6 +25466,7 @@ Light:
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
 --- !u!1 &1252001613
@@ -25467,6 +25559,7 @@ Light:
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
 --- !u!1001 &1256281542
@@ -26058,6 +26151,7 @@ Light:
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
 --- !u!1 &1305179038 stripped
@@ -27170,6 +27264,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 470440, guid: 8ed1fa325ca228645ad26dd6eff14768, type: 3}
   m_PrefabInstance: {fileID: 1376076944}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1380040857 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 101548, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+  m_PrefabInstance: {fileID: 469778954}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1380040859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1380040857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 0}
+  ListenerNumber: -1
 --- !u!4 &1381576124 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6518997691028768924, guid: 278941cfba0a8a14cb8571113f4c93d7, type: 3}
@@ -27265,6 +27378,7 @@ Light:
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
 --- !u!1001 &1402193995
@@ -27516,6 +27630,34 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1406802490 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000012112852726, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+  m_PrefabInstance: {fileID: 469778954}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1406802493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1406802490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1
 --- !u!1001 &1409969970
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27545,15 +27687,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4786487018906418, guid: b540476b589f10f46abb067b58e9e698, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.997555
+      value: 13.005
       objectReference: {fileID: 0}
     - target: {fileID: 4786487018906418, guid: b540476b589f10f46abb067b58e9e698, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 15.160772
+      value: 15.252
       objectReference: {fileID: 0}
     - target: {fileID: 4786487018906418, guid: b540476b589f10f46abb067b58e9e698, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.5385971
+      value: 0.313
       objectReference: {fileID: 0}
     - target: {fileID: 4786487018906418, guid: b540476b589f10f46abb067b58e9e698, type: 3}
       propertyPath: m_LocalRotation.w
@@ -29518,6 +29660,7 @@ Light:
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
 --- !u!1001 &1515537439
@@ -31062,6 +31205,7 @@ Light:
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
 --- !u!1 &1595138648
@@ -32028,6 +32172,7 @@ Light:
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
 --- !u!1 &1663539773
@@ -32543,6 +32688,7 @@ Light:
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
 --- !u!1 &1683498456
@@ -32621,7 +32767,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1694261840}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: f92245ccc7c2fc942bc305de027d194b, type: 3}
@@ -32710,6 +32856,29 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1694261844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1694261840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1
 --- !u!1 &1694689341
 GameObject:
   m_ObjectHideFlags: 0
@@ -37492,6 +37661,7 @@ Light:
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
 --- !u!1 &1967250881
@@ -37595,6 +37765,34 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4337050113896650, guid: b571015d967a73b4cadb57317d7d0547, type: 3}
   m_PrefabInstance: {fileID: 1631893999}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1975335858 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 137860, guid: 7a135b1a2cb9c8f488d4dd00c55ab283, type: 3}
+  m_PrefabInstance: {fileID: 272533049}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1975335861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1975335858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1
 --- !u!1 &1977985740 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100024, guid: 3afc3ad1f4025944cb7622a67af41586, type: 3}
@@ -39226,7 +39424,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2031794040}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e4f4e03ed9e728443afaea1507c59cd1, type: 3}
@@ -39339,6 +39537,29 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: cb262888db6530a4ab62e7f580774847, type: 3}
   m_PrefabInstance: {fileID: 2140672144}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2031794046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2031794040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1
 --- !u!1 &2035277520 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 01dfb375646cba84e9b92e2cedf7d149, type: 3}
@@ -40474,15 +40695,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4786487018906418, guid: b540476b589f10f46abb067b58e9e698, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.997555
+      value: 13.003
       objectReference: {fileID: 0}
     - target: {fileID: 4786487018906418, guid: b540476b589f10f46abb067b58e9e698, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 15.160772
+      value: 15.281
       objectReference: {fileID: 0}
     - target: {fileID: 4786487018906418, guid: b540476b589f10f46abb067b58e9e698, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.5385971
+      value: 0.373
       objectReference: {fileID: 0}
     - target: {fileID: 4786487018906418, guid: b540476b589f10f46abb067b58e9e698, type: 3}
       propertyPath: m_LocalRotation.w
