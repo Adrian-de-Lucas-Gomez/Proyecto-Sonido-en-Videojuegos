@@ -1,5 +1,45 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8326365285159378426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Build/Desktop/Bank A.bank
+  m_EditorClassIdentifier: 
+  Path: C:/hlocal/sonidito/ProyectoSonido/Build/Desktop/Bank A.bank
+  Name: Build/Desktop/Bank A
+  StudioPath: bank:/Bank A
+  lastModified: 637733741589151339
+  FileSizes:
+  - Name: 
+    Value: 482
+  Exists: 0
+--- !u!114 &-7179050339947378295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Desktop/Bank A.bank
+  m_EditorClassIdentifier: 
+  Path: ../ProyectoSonido/Build/Desktop/Bank A.bank
+  Name: Desktop/Bank A
+  StudioPath: bank:/Bank A
+  lastModified: 637733741589151339
+  FileSizes:
+  - Name: Desktop
+    Value: 482
+  Exists: 0
 --- !u!114 &-6703133453438238318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15,10 +55,30 @@ MonoBehaviour:
   Path: ../ProyectoSonido/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637721677000914611
+  lastModified: 637733741589151339
   FileSizes:
   - Name: Desktop
     Value: 1012
+  Exists: 1
+--- !u!114 &-3912255173182020683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: C:/hlocal/sonidito/ProyectoSonido/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 637733791855587346
+  FileSizes:
+  - Name: Desktop
+    Value: 800
   Exists: 1
 --- !u!114 &-3372324375224310352
 MonoBehaviour:
@@ -35,11 +95,75 @@ MonoBehaviour:
   Path: ../ProyectoSonido/Build/Desktop/Bank A.bank
   Name: Bank A
   StudioPath: bank:/Bank A
-  lastModified: 637721676925831117
+  lastModified: 637733741589151339
   FileSizes:
   - Name: Desktop
     Value: 482
   Exists: 1
+--- !u!114 &-1164151428133537218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/TVSound 2
+  m_EditorClassIdentifier: 
+  Path: event:/TVSound 2
+  guid: f9693d9478c56144be95532c8a43f778
+  Banks: []
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 116062
+--- !u!114 &-1053394506489176344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/TOPOTAMADRE
+  m_EditorClassIdentifier: 
+  Path: event:/TOPOTAMADRE
+  guid: 4649fd14f06a35429f21065f6735039c
+  Banks: []
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-501051677379583415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Desktop/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../ProyectoSonido/Build/Desktop/Master.bank
+  Name: Desktop/Master
+  StudioPath: bank:/Master
+  lastModified: 637733754922986471
+  FileSizes:
+  - Name: Desktop
+    Value: 1680
+  Exists: 0
 --- !u!114 &-264278012294097304
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55,11 +179,11 @@ MonoBehaviour:
   Path: ../ProyectoSonido/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637721677000924578
+  lastModified: 637733741589157781
   FileSizes:
   - Name: Desktop
     Value: 748
-  Exists: 1
+  Exists: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73,16 +197,17 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: -264278012294097304}
-  - {fileID: -3372324375224310352}
-  - {fileID: -6703133453438238318}
-  EditorEvents: []
+  - {fileID: -3912255173182020683}
+  - {fileID: 9110360070377676254}
+  EditorEvents:
+  - {fileID: 2202569222661223208}
+  - {fileID: 5387609407195679798}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -6703133453438238318}
+  - {fileID: 9110360070377676254}
   StringsBanks:
-  - {fileID: -264278012294097304}
-  stringsBankWriteTime: 637721677000924578
+  - {fileID: -3912255173182020683}
+  stringsBankWriteTime: 637733791855587346
   cacheVersion: 8
 --- !u!114 &1215929267894187606
 MonoBehaviour:
@@ -104,6 +229,49 @@ MonoBehaviour:
   - Name: Desktop
     Value: 482
   Exists: 1
+--- !u!114 &1378309779614716699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Build/Desktop/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: C:/hlocal/sonidito/ProyectoSonido/Build/Desktop/Master.strings.bank
+  Name: Build/Desktop/Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 637733741589157781
+  FileSizes:
+  - Name: 
+    Value: 748
+  Exists: 0
+--- !u!114 &2202569222661223208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/TVSound
+  m_EditorClassIdentifier: 
+  Path: event:/TVSound
+  guid: 6efc5e1a38081441a2b32c118b736de1
+  Banks:
+  - {fileID: 9110360070377676254}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4000
 --- !u!114 &3303251565816567269
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -143,4 +311,87 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 1012
+  Exists: 1
+--- !u!114 &4218468326463934337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: ../ProyectoSonido/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 637733754922986471
+  FileSizes:
+  - Name: Desktop
+    Value: 744
+  Exists: 0
+--- !u!114 &5387609407195679798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/PrinterSound
+  m_EditorClassIdentifier: 
+  Path: event:/PrinterSound
+  guid: 7abf024a9c018f458b5d552797bef6cf
+  Banks:
+  - {fileID: 9110360070377676254}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 15072
+--- !u!114 &7763538196383636195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Build/Desktop/Master.bank
+  m_EditorClassIdentifier: 
+  Path: C:/hlocal/sonidito/ProyectoSonido/Build/Desktop/Master.bank
+  Name: Build/Desktop/Master
+  StudioPath: bank:/Master
+  lastModified: 637733741589151339
+  FileSizes:
+  - Name: 
+    Value: 1012
+  Exists: 0
+--- !u!114 &9110360070377676254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: C:/hlocal/sonidito/ProyectoSonido/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 637733791855577372
+  FileSizes:
+  - Name: Desktop
+    Value: 1189440
   Exists: 1
