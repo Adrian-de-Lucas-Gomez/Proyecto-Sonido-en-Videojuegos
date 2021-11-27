@@ -7,7 +7,7 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000001FDB15E64A8 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 0000022BC5E37238 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -18,9 +18,58 @@
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 3
-[LOG] SoundI::release                          : SonidoTele (000001FDD3FAD658)
-[LOG] SoundI::release                          :     SonidoTele (000001FDA3288D58)
-[LOG] SoundI::release                          :     SonidoTele (000001FE0607B478)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 3
+[LOG] SystemI::createSound                     : filename = ../ProyectoSonido/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000022CBB1D2498 : node = 0000022BA52D3EE0
+[LOG] SystemI::createSound                     : add node to async list : head = 0000022C53970E88.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000022CBB1D2498
+[LOG] SystemI::createSoundInternal             :     Create name='../ProyectoSonido/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 2505536
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 7712
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000022BA52D3FF0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='SonidoTele', format=5, channels=2, frequency=48000, lengthbytes=1004000, lengthpcm=5570977, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.188019.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000022CBB1D2498
+[LOG] SoundI::release                          : SonidoTele (0000022CBB1E5CF8)
+[LOG] SoundI::release                          :     SonidoTele (0000022BA1BB1A58)
+[LOG] SoundI::release                          :     SonidoTele (0000022CBB1E48B8)
+[LOG] SystemI::createSound                     : filename = ../ProyectoSonido/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000022CBB1D1718 : node = 0000022BA52CEB20
+[LOG] SystemI::createSound                     : add node to async list : head = 0000022C53970E88.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000022CBB1D1718
+[LOG] SystemI::createSoundInternal             :     Create name='../ProyectoSonido/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 2505536
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 7712
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000022BA52CEC30
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='SonidoTele', format=5, channels=2, frequency=48000, lengthbytes=1004000, lengthpcm=5570977, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.188019.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000022CBB1D1718
+[LOG] SoundI::release                          : SonidoTele (0000022CBB1D2498)
+[LOG] SoundI::release                          :     SonidoTele (0000022BA1BB18B8)
+[LOG] SoundI::release                          :     SonidoTele (0000022CBB1D1F88)
+[LOG] SoundI::release                          : SonidoTele (0000022CBB1D1718)
+[LOG] SoundI::release                          :     SonidoTele (0000022BA1BB0EF8)
+[LOG] SoundI::release                          :     SonidoTele (0000022CBB1D2B58)
+[LOG] SoundI::release                          : Impresora (0000022BC63B0768)
+[LOG] SoundI::release                          :     Impresora (0000022BA1BB2A98)
+[LOG] SoundI::release                          :     Impresora (0000022CBB1E4708)
+[LOG] SoundI::release                          :  (0000022B9E4E7408)
+[LOG] SoundI::release                          :     MotorCoche (0000022BA1BB0538)
+[LOG] SoundI::release                          :  (0000022B9E4E8268)
+[LOG] SoundI::release                          :     Ordenador (0000022BA1BB2278)
 [LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients

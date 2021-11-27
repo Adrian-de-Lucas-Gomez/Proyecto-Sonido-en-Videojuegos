@@ -1,5 +1,28 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9067851178439499976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/CarSound
+  m_EditorClassIdentifier: 
+  Path: event:/CarSound
+  guid: 6b8d975bba5d574d9eb62c753b9e1b90
+  Banks:
+  - {fileID: -1088876826934511286}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4250
 --- !u!114 &-8326365285159378426
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60,6 +83,26 @@ MonoBehaviour:
   - Name: Desktop
     Value: 1012
   Exists: 1
+--- !u!114 &-5627903413719695531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: ../ProyectoSonido/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 637736325002777217
+  FileSizes:
+  - Name: Desktop
+    Value: 906
+  Exists: 1
 --- !u!114 &-3912255173182020683
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -100,6 +143,29 @@ MonoBehaviour:
   - Name: Desktop
     Value: 482
   Exists: 1
+--- !u!114 &-2037877679293679914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Laptop
+  m_EditorClassIdentifier: 
+  Path: event:/Laptop
+  guid: 03d6d789c8feef489cf81245c8abc5fe
+  Banks:
+  - {fileID: -1088876826934511286}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 7993
 --- !u!114 &-1164151428133537218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -122,6 +188,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 116062
+--- !u!114 &-1088876826934511286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../ProyectoSonido/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 637736325002747216
+  FileSizes:
+  - Name: Desktop
+    Value: 2513248
+  Exists: 1
 --- !u!114 &-1053394506489176344
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -164,6 +250,29 @@ MonoBehaviour:
   - Name: Desktop
     Value: 1680
   Exists: 0
+--- !u!114 &-282751814401873328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/TVSound
+  m_EditorClassIdentifier: 
+  Path: event:/TVSound
+  guid: 6efc5e1a38081441a2b32c118b736de1
+  Banks:
+  - {fileID: -1088876826934511286}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4000
 --- !u!114 &-264278012294097304
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -197,17 +306,20 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: -3912255173182020683}
-  - {fileID: 9110360070377676254}
+  - {fileID: -5627903413719695531}
+  - {fileID: -1088876826934511286}
   EditorEvents:
-  - {fileID: 2202569222661223208}
-  - {fileID: 5387609407195679798}
+  - {fileID: -2037877679293679914}
+  - {fileID: 5712677153178069415}
+  - {fileID: -9067851178439499976}
+  - {fileID: -282751814401873328}
+  - {fileID: 5675580129287591015}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 9110360070377676254}
+  - {fileID: -1088876826934511286}
   StringsBanks:
-  - {fileID: -3912255173182020683}
-  stringsBankWriteTime: 637733791855587346
+  - {fileID: -5627903413719695531}
+  stringsBankWriteTime: 637736325002777217
   cacheVersion: 8
 --- !u!114 &1215929267894187606
 MonoBehaviour:
@@ -348,6 +460,52 @@ MonoBehaviour:
   guid: 7abf024a9c018f458b5d552797bef6cf
   Banks:
   - {fileID: 9110360070377676254}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 15072
+--- !u!114 &5675580129287591015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Birds
+  m_EditorClassIdentifier: 
+  Path: event:/Birds
+  guid: e65ee8e867f42341bf5b1937a40a2075
+  Banks:
+  - {fileID: -1088876826934511286}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 95164
+--- !u!114 &5712677153178069415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Printer
+  m_EditorClassIdentifier: 
+  Path: event:/Printer
+  guid: 0408457990fd0d4da2cf9641c320d7ae
+  Banks:
+  - {fileID: -1088876826934511286}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0

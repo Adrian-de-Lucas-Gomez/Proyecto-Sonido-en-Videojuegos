@@ -24,6 +24,7 @@
 		</relationship>
 		<relationship name="markerTracks">
 			<destination>{a2848bc5-3d6d-4109-a3af-d1e89b7f418b}</destination>
+			<destination>{d6119dd3-3876-4069-ba1d-e15abd7a12a2}</destination>
 		</relationship>
 		<relationship name="groupTracks">
 			<destination>{85c210ee-59f7-457e-b389-0a25f34b6855}</destination>
@@ -58,6 +59,7 @@
 	</object>
 	<object class="EventAutomatableProperties" id="{1d309ba0-9fbb-4eec-ab87-e4cb4bed04e4}" />
 	<object class="MarkerTrack" id="{a2848bc5-3d6d-4109-a3af-d1e89b7f418b}" />
+	<object class="MarkerTrack" id="{d6119dd3-3876-4069-ba1d-e15abd7a12a2}" />
 	<object class="GroupTrack" id="{85c210ee-59f7-457e-b389-0a25f34b6855}">
 		<relationship name="modules">
 			<destination>{a0ef249c-42fd-4ddb-877d-28efd8e73dfa}</destination>
@@ -72,6 +74,7 @@
 		</relationship>
 		<relationship name="markers">
 			<destination>{fe0e0be2-2556-42c8-9b2c-47efcd7956fe}</destination>
+			<destination>{ceae4077-9ff5-46ce-8f41-9a2e5b3b80bf}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{25207cb2-2c30-404b-973b-ad6a6f7399e7}">
@@ -118,13 +121,30 @@
 			<value>0</value>
 		</property>
 		<property name="length">
-			<value>0.10000000000000001</value>
+			<value>4</value>
+		</property>
+		<property name="looping">
+			<value>0</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{4dfd4941-633b-4061-bdc8-35ee42ba82f8}</destination>
 		</relationship>
 		<relationship name="markerTrack">
 			<destination>{a2848bc5-3d6d-4109-a3af-d1e89b7f418b}</destination>
+		</relationship>
+	</object>
+	<object class="LoopRegion" id="{ceae4077-9ff5-46ce-8f41-9a2e5b3b80bf}">
+		<property name="position">
+			<value>0</value>
+		</property>
+		<property name="length">
+			<value>4</value>
+		</property>
+		<relationship name="timeline">
+			<destination>{4dfd4941-633b-4061-bdc8-35ee42ba82f8}</destination>
+		</relationship>
+		<relationship name="markerTrack">
+			<destination>{d6119dd3-3876-4069-ba1d-e15abd7a12a2}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusEffectChain" id="{a7ba8bd4-aec7-44ba-a926-4a8b27313964}">
