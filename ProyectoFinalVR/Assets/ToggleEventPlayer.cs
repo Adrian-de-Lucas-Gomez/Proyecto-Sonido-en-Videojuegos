@@ -28,7 +28,11 @@ namespace FMODUnity
                 if (instance.start() != FMOD.RESULT.OK) Debug.Log("Couldn't play sound: " + Event);
                 else FMODUnity.RuntimeManager.AttachInstanceToGameObject(instance, GetComponent<Transform>(), GetComponent<Rigidbody>());
             }
-            else instance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            else
+            {
+                instance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+                instance.release();
+            }
         }
     }
 }
