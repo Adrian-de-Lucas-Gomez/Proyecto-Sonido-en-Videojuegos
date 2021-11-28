@@ -98,7 +98,7 @@ MonoBehaviour:
   Path: ../ProyectoSonido/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637737241678095666
+  lastModified: 637737329767980669
   FileSizes:
   - Name: Desktop
     Value: 906
@@ -164,7 +164,7 @@ MonoBehaviour:
   IsOneShot: 0
   Parameters: []
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 6.4
   Length: 7993
 --- !u!114 &-1164151428133537218
 MonoBehaviour:
@@ -203,7 +203,7 @@ MonoBehaviour:
   Path: ../ProyectoSonido/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637737241678075654
+  lastModified: 637737329767960209
   FileSizes:
   - Name: Desktop
     Value: 2513248
@@ -270,9 +270,9 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 0
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 4000
+  MinDistance: 2.2
+  MaxDistance: 9.8
+  Length: 73100
 --- !u!114 &-264278012294097304
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -319,7 +319,7 @@ MonoBehaviour:
   - {fileID: -1088876826934511286}
   StringsBanks:
   - {fileID: -5627903413719695531}
-  stringsBankWriteTime: 637737241678095666
+  stringsBankWriteTime: 637737329767980669
   cacheVersion: 8
 --- !u!114 &1215929267894187606
 MonoBehaviour:
@@ -510,8 +510,8 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 0
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
+  MinDistance: 0.1
+  MaxDistance: 7.2000003
   Length: 15072
 --- !u!114 &7763538196383636195
 MonoBehaviour:

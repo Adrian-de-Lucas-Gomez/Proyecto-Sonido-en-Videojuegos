@@ -1818,6 +1818,16 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 22.542425, y: 41.274635, z: 9.433177}
   m_Center: {x: -0.000007662846, y: 0.000008066874, z: 7.5668826}
+--- !u!4 &98804280 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: d734e0f1e8152164f912667b484f1bb9, type: 3}
+  m_PrefabInstance: {fileID: 98941112}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &98844184 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: d734e0f1e8152164f912667b484f1bb9, type: 3}
+  m_PrefabInstance: {fileID: 98941112}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &98941112
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1875,31 +1885,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d734e0f1e8152164f912667b484f1bb9, type: 3}
---- !u!1 &98941113 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100000, guid: d734e0f1e8152164f912667b484f1bb9, type: 3}
-  m_PrefabInstance: {fileID: 98941112}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &98941114
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 98941113}
-  m_Enabled: 0
+  m_GameObject: {fileID: 98844184}
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cce9b50cee98a6b419092179d860ff49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventPath: event:/Printer
+  Event: event:/Printer
 --- !u!64 &98941115
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 98941113}
+  m_GameObject: {fileID: 98844184}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
@@ -1913,7 +1918,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 98941113}
+  m_GameObject: {fileID: 98844184}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ffefbea063cab884ca33e5a449e5c22c, type: 3}
@@ -1979,7 +1984,7 @@ Rigidbody:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 98941113}
+  m_GameObject: {fileID: 98844184}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -1995,7 +2000,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 98941113}
+  m_GameObject: {fileID: 98844184}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b93b6a877adcbf94c89a9d6e0c0e844d, type: 3}
@@ -2041,34 +2046,6 @@ MonoBehaviour:
   highlightOnHover: 1
   hideHighlight: []
   hoverPriority: 0
---- !u!114 &98941122
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 98941113}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  Event: event:/Printer
-  PlayEvent: 0
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
---- !u!4 &100834951 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 400000, guid: d734e0f1e8152164f912667b484f1bb9, type: 3}
-  m_PrefabInstance: {fileID: 98941112}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &100966278
 GameObject:
   m_ObjectHideFlags: 0
@@ -4836,7 +4813,7 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 89d3f58e76f347d40a9626674690672a, type: 3}
---- !u!114 &290134422
+--- !u!114 &290134421
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4845,20 +4822,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 290134416}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Script: {fileID: 11500000, guid: cf0f98fef2708e541bdb1c157124ca6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CollisionTag: 
   Event: event:/TVSound
-  PlayEvent: 1
-  StopEvent: 2
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
+  canBePickedUp: 0
 --- !u!1001 &291263512
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6880,6 +6848,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 105336, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 107946, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_Name
       value: Player
@@ -6948,6 +6920,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 1.5
       objectReference: {fileID: 0}
+    - target: {fileID: 11465950, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: audioListener
+      value: 
+      objectReference: {fileID: 1096363351}
     - target: {fileID: 13693334, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_Height
       value: 2.5684702
@@ -6967,6 +6943,7 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 0}
     - {fileID: 0}
+    - {fileID: 1946297339752392488, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
 --- !u!1 &470435282 stripped
 GameObject:
@@ -21968,6 +21945,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1094846473}
   m_Mesh: {fileID: -8444149021728057130, guid: 8bc547f2300214edfa282f75ef0e4d86, type: 3}
+--- !u!4 &1096363351 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+  m_PrefabInstance: {fileID: 469778954}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1097368709
 GameObject:
   m_ObjectHideFlags: 0
@@ -22805,7 +22787,7 @@ MonoBehaviour:
   highlightOnHover: 1
   hideHighlight: []
   hoverPriority: 0
---- !u!114 &1135684017
+--- !u!114 &1135684016
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -22814,20 +22796,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1135684009}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Script: {fileID: 11500000, guid: cf0f98fef2708e541bdb1c157124ca6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CollisionTag: 
   Event: event:/Laptop
-  PlayEvent: 1
-  StopEvent: 2
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 1
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 6.66
+  canBePickedUp: 0
 --- !u!1001 &1138862654
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27633,7 +27606,7 @@ Transform:
   m_Children:
   - {fileID: 412866076}
   - {fileID: 774174867}
-  - {fileID: 100834951}
+  - {fileID: 98804280}
   - {fileID: 1722436063}
   - {fileID: 529281661}
   - {fileID: 883013694}
@@ -35063,6 +35036,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1841128806}
   m_Mesh: {fileID: 2402999860006042385, guid: 8bc547f2300214edfa282f75ef0e4d86, type: 3}
+--- !u!1 &1842685511 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 110716, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+  m_PrefabInstance: {fileID: 469778954}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1842685515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1842685511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 0}
+  ListenerNumber: -1
 --- !u!1 &1843973779
 GameObject:
   m_ObjectHideFlags: 0

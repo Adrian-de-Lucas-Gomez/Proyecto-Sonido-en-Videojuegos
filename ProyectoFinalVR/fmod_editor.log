@@ -7,7 +7,7 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 0000028AF5A24C18 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 0000028ABD381D88 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -22,51 +22,15 @@
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 3
-[LOG] SystemI::createSound                     : filename = ../ProyectoSonido/Build/Desktop/Master.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 0000028AC9641B58 : node = 0000028AA4AAFC00
-[LOG] SystemI::createSound                     : add node to async list : head = 0000028B28350A18.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000028AC9641B58
-[LOG] SystemI::createSoundInternal             :     Create name='../ProyectoSonido/Build/Desktop/Master.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 2505536
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 7712
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000028AA4AAFD10
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='SonidoTele', format=5, channels=2, frequency=48000, lengthbytes=1004000, lengthpcm=5570977, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.188019.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000028AC9641B58
-[LOG] SoundI::release                          : SonidoTele (0000028A9D42B768)
-[LOG] SoundI::release                          :     SonidoTele (0000028AF952C5E8)
-[LOG] SoundI::release                          :     SonidoTele (0000028AF67B00A8)
-[LOG] SystemI::createSound                     : filename = ../ProyectoSonido/Build/Desktop/Master.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 0000028AC96468F8 : node = 0000028AA4AB0C40
-[LOG] SystemI::createSound                     : add node to async list : head = 0000028B28350A18.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000028AC96468F8
-[LOG] SystemI::createSoundInternal             :     Create name='../ProyectoSonido/Build/Desktop/Master.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 2505536
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 7712
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000028AA4AB0D50
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='SonidoTele', format=5, channels=2, frequency=48000, lengthbytes=1004000, lengthpcm=5570977, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.188019.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000028AC96468F8
-[LOG] SoundI::release                          : SonidoTele (0000028AC9641B58)
-[LOG] SoundI::release                          :     SonidoTele (0000028AF91F6D58)
-[LOG] SoundI::release                          :     SonidoTele (0000028B27BD8B28)
-[LOG] SoundI::release                          : SonidoTele (0000028AC96468F8)
-[LOG] SoundI::release                          :     SonidoTele (0000028AF952C788)
-[LOG] SoundI::release                          :     SonidoTele (0000028AF67B0768)
-[LOG] SoundI::release                          :  (0000028AF587C368)
-[LOG] SoundI::release                          :     MotorCoche (0000028B4120E588)
-[LOG] SoundI::release                          :  (0000028AF587F448)
-[LOG] SoundI::release                          :     Ordenador (0000028B41210948)
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000288EFC84E18
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000288EFC84E18
+[LOG] SoundI::release                          : SonidoTele (00000288EFC84C68)
+[LOG] SoundI::release                          :     SonidoTele (0000028B27A5E578)
+[LOG] SoundI::release                          :     SonidoTele (00000288EFC84E18)
+[LOG] SoundI::release                          :  (0000028A9EBBED48)
+[LOG] SoundI::release                          :     MotorCoche (0000028B41A402D8)
+[LOG] SoundI::release                          :  (0000028A9EBBF028)
+[LOG] SoundI::release                          :     Ordenador (0000028B41A3FF98)
 [LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients

@@ -1,31 +1,32 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-namespace FMODUnity
+namespace Sonido
 {
-    public class ToggleEventPlayer : MonoBehaviour
+    public class ToggleEventPlayer : EventPlayer
     {
-        [EventRef]
-        public string Event = "";
-        private FMOD.Studio.EventInstance instance;
         private FMOD.Studio.PLAYBACK_STATE state;
 
         public void Update()
         {
-            instance.getPlaybackState(out state);
-            if (state == FMOD.Studio.PLAYBACK_STATE.PLAYING)
+            if (loaded)
             {
-                instance.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
+                instance.getPlaybackState(out state);
+                if (state == FMOD.Studio.PLAYBACK_STATE.PLAYING)
+                {
+                    instance.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
+                }
             }
+
         }
 
-        public void playEvent()
+        public override void playEvent()
         {
             instance.getPlaybackState(out state);
             if (state != FMOD.Studio.PLAYBACK_STATE.PLAYING)
             {
                 instance = FMODUnity.RuntimeManager.CreateInstance(Event);
-                if (instance.start() != FMOD.RESULT.OK) Debug.Log("Couldn't play sound: " + Event);
+                if (loaded = (instance.start() == FMOD.RESULT.OK)) Debug.Log("Couldn't play sound: " + Event);
                 else FMODUnity.RuntimeManager.AttachInstanceToGameObject(instance, GetComponent<Transform>(), GetComponent<Rigidbody>());
             }
             else
