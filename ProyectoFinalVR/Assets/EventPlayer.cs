@@ -7,11 +7,11 @@ public class EventPlayer : MonoBehaviour
     [SerializeField]
     private string eventPath;
     private FMOD.Studio.EventInstance instance;
+    private FMOD.Studio.PLAYBACK_STATE state;
     // Start is called before the first frame update
     void Start()
     {
-        instance = FMODUnity.RuntimeManager.CreateInstance(eventPath);
-        FMODUnity.RuntimeManager.AttachInstanceToGameObject(instance, GetComponent<Transform>(), GetComponent<Rigidbody>());
+
     }
 
     public void Update()
@@ -21,7 +21,13 @@ public class EventPlayer : MonoBehaviour
 
     public void playEvent()
     {
-        Debug.Log("PRINTER GO BRRRRRRRRRRRRRRR");
-        instance.start();
+        instance.getPlaybackState(out state);
+        if (state != FMOD.Studio.PLAYBACK_STATE.PLAYING)
+        {
+            instance = FMODUnity.RuntimeManager.CreateInstance(eventPath);
+            FMODUnity.RuntimeManager.AttachInstanceToGameObject(instance, GetComponent<Transform>(), GetComponent<Rigidbody>());
+            if (instance.start() != FMOD.RESULT.OK) Debug.Log("Couldn't play sound: " + eventPath);
+        }
+        else instance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
     }
 }

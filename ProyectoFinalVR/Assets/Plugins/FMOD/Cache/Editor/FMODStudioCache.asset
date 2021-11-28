@@ -98,7 +98,7 @@ MonoBehaviour:
   Path: ../ProyectoSonido/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637736325002777217
+  lastModified: 637737241678095666
   FileSizes:
   - Name: Desktop
     Value: 906
@@ -203,7 +203,7 @@ MonoBehaviour:
   Path: ../ProyectoSonido/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637736325002747216
+  lastModified: 637737241678075654
   FileSizes:
   - Name: Desktop
     Value: 2513248
@@ -319,7 +319,7 @@ MonoBehaviour:
   - {fileID: -1088876826934511286}
   StringsBanks:
   - {fileID: -5627903413719695531}
-  stringsBankWriteTime: 637736325002777217
+  stringsBankWriteTime: 637737241678095666
   cacheVersion: 8
 --- !u!114 &1215929267894187606
 MonoBehaviour:
