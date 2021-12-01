@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="Snapshot" id="{2a40942f-6de5-468d-91f0-a00890ff7efc}">
+		<property name="name">
+			<value>HabitacionGrande</value>
+		</property>
+		<property name="behavior">
+			<value>1</value>
+		</property>
+		<relationship name="mixer">
+			<destination>{304a9dd0-6390-4171-9712-2006c48dd3b2}</destination>
+		</relationship>
+		<relationship name="automatableProperties">
+			<destination>{6f0bff76-a1bb-4fc2-9fb8-d1ec4d0bf782}</destination>
+		</relationship>
+		<relationship name="markerTracks">
+			<destination>{3d44abbb-c5a7-4208-816f-3846ba6ec16e}</destination>
+		</relationship>
+		<relationship name="timeline">
+			<destination>{dd79577a-5d94-4bde-b46f-c1699676ecce}</destination>
+		</relationship>
+		<relationship name="snapshotMasterTrack">
+			<destination>{667a91df-d768-4c43-9cb0-52f7afd89203}</destination>
+		</relationship>
+		<relationship name="snapshotProperties">
+			<destination>{9fe34af5-8680-4510-bdfc-e0687570674e}</destination>
+			<destination>{0dfd2300-7644-4985-a2e1-8a9a7ab17ec4}</destination>
+		</relationship>
+		<relationship name="snapshotTracks">
+			<destination>{d6bf2080-77a4-4204-b87b-32956ab2293b}</destination>
+		</relationship>
+	</object>
+	<object class="EventAutomatableProperties" id="{6f0bff76-a1bb-4fc2-9fb8-d1ec4d0bf782}" />
+	<object class="MarkerTrack" id="{3d44abbb-c5a7-4208-816f-3846ba6ec16e}" />
+	<object class="Timeline" id="{dd79577a-5d94-4bde-b46f-c1699676ecce}" />
+	<object class="SnapshotMasterTrack" id="{667a91df-d768-4c43-9cb0-52f7afd89203}" />
+	<object class="SnapshotProperty" id="{9fe34af5-8680-4510-bdfc-e0687570674e}">
+		<property name="propertyName">
+			<value>earlyDelay</value>
+		</property>
+		<property name="value">
+			<value>11.5</value>
+		</property>
+		<relationship name="automatableObject">
+			<destination>{5d10dc9b-0efc-4f3b-bca6-3cccb116c40b}</destination>
+		</relationship>
+	</object>
+	<object class="SnapshotProperty" id="{0dfd2300-7644-4985-a2e1-8a9a7ab17ec4}">
+		<property name="propertyName">
+			<value>lateDelay</value>
+		</property>
+		<property name="value">
+			<value>23</value>
+		</property>
+		<relationship name="automatableObject">
+			<destination>{5d10dc9b-0efc-4f3b-bca6-3cccb116c40b}</destination>
+		</relationship>
+	</object>
+	<object class="SnapshotTrack" id="{d6bf2080-77a4-4204-b87b-32956ab2293b}">
+		<relationship name="mixerStrip">
+			<destination>{58040f03-a207-473d-85c2-930b562e0f9c}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="Snapshot" id="{27a8ed9f-c3a9-43e2-bc1b-e6c2c8b92be7}">
+		<property name="name">
+			<value>Baño</value>
+		</property>
+		<property name="behavior">
+			<value>1</value>
+		</property>
+		<relationship name="mixer">
+			<destination>{304a9dd0-6390-4171-9712-2006c48dd3b2}</destination>
+		</relationship>
+		<relationship name="automatableProperties">
+			<destination>{665f4f80-24f9-48d4-81bf-6f44f214ee2b}</destination>
+		</relationship>
+		<relationship name="markerTracks">
+			<destination>{e5acaa02-28a7-4969-97e2-35589c0bdf0a}</destination>
+		</relationship>
+		<relationship name="timeline">
+			<destination>{78f6b2df-38db-4beb-8163-e9ea9119c9cc}</destination>
+		</relationship>
+		<relationship name="snapshotMasterTrack">
+			<destination>{c5921439-4216-47dc-9ea8-2e894cfd24bc}</destination>
+		</relationship>
+		<relationship name="snapshotProperties">
+			<destination>{876c0d41-66c3-45d4-b3fd-be99c3aa3c54}</destination>
+			<destination>{83faef3e-713e-41f1-9c08-c8f883e2fcae}</destination>
+			<destination>{001b2051-05b6-4852-b170-56bc3ba94c83}</destination>
+		</relationship>
+		<relationship name="snapshotTracks">
+			<destination>{791f6616-4fcf-4c28-a73f-229890668e29}</destination>
+		</relationship>
+	</object>
+	<object class="EventAutomatableProperties" id="{665f4f80-24f9-48d4-81bf-6f44f214ee2b}" />
+	<object class="MarkerTrack" id="{e5acaa02-28a7-4969-97e2-35589c0bdf0a}" />
+	<object class="Timeline" id="{78f6b2df-38db-4beb-8163-e9ea9119c9cc}" />
+	<object class="SnapshotMasterTrack" id="{c5921439-4216-47dc-9ea8-2e894cfd24bc}" />
+	<object class="SnapshotProperty" id="{876c0d41-66c3-45d4-b3fd-be99c3aa3c54}">
+		<property name="propertyName">
+			<value>diffusion</value>
+		</property>
+		<property name="value">
+			<value>33.5</value>
+		</property>
+		<relationship name="automatableObject">
+			<destination>{5d10dc9b-0efc-4f3b-bca6-3cccb116c40b}</destination>
+		</relationship>
+	</object>
+	<object class="SnapshotProperty" id="{83faef3e-713e-41f1-9c08-c8f883e2fcae}">
+		<property name="propertyName">
+			<value>lowShelfFrequency</value>
+		</property>
+		<property name="value">
+			<value>660</value>
+		</property>
+		<relationship name="automatableObject">
+			<destination>{5d10dc9b-0efc-4f3b-bca6-3cccb116c40b}</destination>
+		</relationship>
+	</object>
+	<object class="SnapshotProperty" id="{001b2051-05b6-4852-b170-56bc3ba94c83}">
+		<property name="propertyName">
+			<value>earlyLateMix</value>
+		</property>
+		<property name="value">
+			<value>69</value>
+		</property>
+		<relationship name="automatableObject">
+			<destination>{5d10dc9b-0efc-4f3b-bca6-3cccb116c40b}</destination>
+		</relationship>
+	</object>
+	<object class="SnapshotTrack" id="{791f6616-4fcf-4c28-a73f-229890668e29}">
+		<relationship name="mixerStrip">
+			<destination>{58040f03-a207-473d-85c2-930b562e0f9c}</destination>
+		</relationship>
+	</object>
+</objects>
