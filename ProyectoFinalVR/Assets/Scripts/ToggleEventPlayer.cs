@@ -32,7 +32,7 @@ namespace Sonido
             else
             {
                 instance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-                instance.release();
+                //instance.release();
             }
         }
     }
