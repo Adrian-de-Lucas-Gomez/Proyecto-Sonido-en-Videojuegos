@@ -98,11 +98,34 @@ MonoBehaviour:
   Path: ../ProyectoSonido/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637737329767980669
+  lastModified: 637739567603901698
   FileSizes:
   - Name: Desktop
-    Value: 906
+    Value: 958
   Exists: 1
+--- !u!114 &-5183653959750695449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/PrinterCollSound
+  m_EditorClassIdentifier: 
+  Path: event:/PrinterCollSound
+  guid: 8f8d2eecfd4e1d40a52c1979d5240b26
+  Banks:
+  - {fileID: -1088876826934511286}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 391
 --- !u!114 &-3912255173182020683
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -203,10 +226,10 @@ MonoBehaviour:
   Path: ../ProyectoSonido/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637737329767960209
+  lastModified: 637739567603871690
   FileSizes:
   - Name: Desktop
-    Value: 2513248
+    Value: 2518496
   Exists: 1
 --- !u!114 &-1053394506489176344
 MonoBehaviour:
@@ -314,12 +337,13 @@ MonoBehaviour:
   - {fileID: -9067851178439499976}
   - {fileID: -282751814401873328}
   - {fileID: 5675580129287591015}
+  - {fileID: -5183653959750695449}
   EditorParameters: []
   MasterBanks:
   - {fileID: -1088876826934511286}
   StringsBanks:
   - {fileID: -5627903413719695531}
-  stringsBankWriteTime: 637737329767980669
+  stringsBankWriteTime: 637739567603901698
   cacheVersion: 8
 --- !u!114 &1215929267894187606
 MonoBehaviour:

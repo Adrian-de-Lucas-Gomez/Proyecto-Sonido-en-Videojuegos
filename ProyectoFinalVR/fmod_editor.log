@@ -7,7 +7,7 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 0000028ABD381D88 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 00000176BAF374D8 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -22,15 +22,183 @@
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 3
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000288EFC84E18
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000288EFC84E18
-[LOG] SoundI::release                          : SonidoTele (00000288EFC84C68)
-[LOG] SoundI::release                          :     SonidoTele (0000028B27A5E578)
-[LOG] SoundI::release                          :     SonidoTele (00000288EFC84E18)
-[LOG] SoundI::release                          :  (0000028A9EBBED48)
-[LOG] SoundI::release                          :     MotorCoche (0000028B41A402D8)
-[LOG] SoundI::release                          :  (0000028A9EBBF028)
-[LOG] SoundI::release                          :     Ordenador (0000028B41A3FF98)
+[LOG] SystemI::createSound                     : filename = ../ProyectoSonido/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000017550BC6008 : node = 000001759C594590
+[LOG] SystemI::createSound                     : add node to async list : head = 0000017660DD2078.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000017550BC6008
+[LOG] SystemI::createSoundInternal             :     Create name='../ProyectoSonido/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 2509600
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 8896
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001759C5946A0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Impresora', format=5, channels=2, frequency=48000, lengthbytes=180608, lengthpcm=723487, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.456909.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000017550BC6008
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2509600
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 8896
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000540F42EF88
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBD2EE60E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBD2EE60B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBD2EE61B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBD2EE6270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000017629EE7CF8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='yt1s.com - Roblox Death Sound  Sound Effect HD', format=5, channels=2, frequency=48000, lengthbytes=3968, lengthpcm=18808, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.993286.
+[LOG] SoundI::release                          : Impresora (0000017550BC6008)
+[LOG] SoundI::release                          :     Impresora (0000017660D49A08)
+[LOG] SoundI::release                          :     Impresora (00000176BCA9BEB8)
+[LOG] SystemI::createSound                     : filename = ../ProyectoSonido/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000017550BC5798 : node = 000001759C594590
+[LOG] SystemI::createSound                     : add node to async list : head = 0000017660DD2078.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000017550BC5798
+[LOG] SystemI::createSoundInternal             :     Create name='../ProyectoSonido/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 2509600
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 8896
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001759C5946A0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Impresora', format=5, channels=2, frequency=48000, lengthbytes=180608, lengthpcm=723487, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.456909.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000017550BC5798
+[LOG] SoundI::release                          : Impresora (0000017550BC5798)
+[LOG] SoundI::release                          :     Impresora (0000017550C22D08)
+[LOG] SoundI::release                          :     Impresora (0000017550BC5CA8)
+[LOG] SystemI::createSound                     : filename = ../ProyectoSonido/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000176BD20D3D8 : node = 00000176CEDB65C0
+[LOG] SystemI::createSound                     : add node to async list : head = 0000017660DD2078.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000176BD20D3D8
+[LOG] SystemI::createSoundInternal             :     Create name='../ProyectoSonido/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 2509600
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 8896
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000176CEDB66D0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Impresora', format=5, channels=2, frequency=48000, lengthbytes=180608, lengthpcm=723487, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.456909.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000176BD20D3D8
+[LOG] SoundI::release                          : Impresora (00000176BD20D3D8)
+[LOG] SoundI::release                          :     Impresora (0000017550C22D08)
+[LOG] SoundI::release                          :     Impresora (0000017550BC5CA8)
+[LOG] SystemI::createSound                     : filename = ../ProyectoSonido/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000176BD20D3D8 : node = 00000176CEDB60C0
+[LOG] SystemI::createSound                     : add node to async list : head = 0000017660DD2078.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000176BD20D3D8
+[LOG] SystemI::createSoundInternal             :     Create name='../ProyectoSonido/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 2509600
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 8896
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000176CEDB61D0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Impresora', format=5, channels=2, frequency=48000, lengthbytes=180608, lengthpcm=723487, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.456909.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000176BD20D3D8
+[LOG] SoundI::release                          : Impresora (00000176BD20D3D8)
+[LOG] SoundI::release                          :     Impresora (0000017550C22D08)
+[LOG] SoundI::release                          :     Impresora (0000017550BC5948)
+[LOG] SystemI::createSound                     : filename = ../ProyectoSonido/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000176BD20D078 : node = 00000176CEDB6340
+[LOG] SystemI::createSound                     : add node to async list : head = 0000017660DD2078.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000176BD20D078
+[LOG] SystemI::createSoundInternal             :     Create name='../ProyectoSonido/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 2509600
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 8896
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000176CEDB6450
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='SonidoTele', format=5, channels=2, frequency=48000, lengthbytes=1004000, lengthpcm=5570977, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.188019.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000176BD20D078
+[LOG] SystemI::createSound                     : filename = ../ProyectoSonido/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000176BB287FF8 : node = 00000176CEDB6200
+[LOG] SystemI::createSound                     : add node to async list : head = 0000017660DD2078.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000176BB287FF8
+[LOG] SystemI::createSoundInternal             :     Create name='../ProyectoSonido/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 2509600
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 8896
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000176CEDB6310
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Impresora', format=5, channels=2, frequency=48000, lengthbytes=180608, lengthpcm=723487, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.456909.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000176BB287FF8
+[LOG] SoundI::release                          : SonidoTele (0000017660366798)
+[LOG] SoundI::release                          :     SonidoTele (00000176C9F4B748)
+[LOG] SoundI::release                          :     SonidoTele (00000176BC9E88B8)
+[LOG] SoundI::release                          : Impresora (00000176BB287FF8)
+[LOG] SoundI::release                          :     Impresora (0000017550C22D08)
+[LOG] SoundI::release                          :     Impresora (0000017550BC5948)
+[LOG] SystemI::createSound                     : filename = ../ProyectoSonido/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000176BB287938 : node = 00000176CEDB6200
+[LOG] SystemI::createSound                     : add node to async list : head = 0000017660DD2078.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000176BB287938
+[LOG] SystemI::createSoundInternal             :     Create name='../ProyectoSonido/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 2509600
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 8896
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000176CEDB6310
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Impresora', format=5, channels=2, frequency=48000, lengthbytes=180608, lengthpcm=723487, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.456909.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000176BB287938
+[LOG] SoundI::release                          : Impresora (00000176BB287938)
+[LOG] SoundI::release                          :     Impresora (0000017550C22D08)
+[LOG] SoundI::release                          :     Impresora (0000017550BC5948)
+[LOG] SystemI::createSound                     : filename = ../ProyectoSonido/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000176BB287E48 : node = 00000176CEDB65C0
+[LOG] SystemI::createSound                     : add node to async list : head = 0000017660DD2078.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000176BB287E48
+[LOG] SystemI::createSoundInternal             :     Create name='../ProyectoSonido/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 2509600
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 8896
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000176CEDB66D0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Impresora', format=5, channels=2, frequency=48000, lengthbytes=180608, lengthpcm=723487, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.456909.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000176BB287E48
+[LOG] SoundI::release                          : SonidoTele (00000176BD20D078)
+[LOG] SoundI::release                          :     SonidoTele (0000017550C231E8)
+[LOG] SoundI::release                          :     SonidoTele (0000017550BC5798)
+[LOG] SoundI::release                          : Impresora (00000176BB287E48)
+[LOG] SoundI::release                          :     Impresora (0000017550C22EA8)
+[LOG] SoundI::release                          :     Impresora (0000017550BC5E58)
+[LOG] SoundI::release                          :  (00000176538D22C8)
+[LOG] SoundI::release                          :     yt1s.com - Roblox Death Sound  Sound Effect HD (0000017653007338)
+[LOG] SoundI::release                          :  (00000176538DD0B8)
+[LOG] SoundI::release                          :     MotorCoche (0000017660291008)
+[LOG] SoundI::release                          :  (00000176538DAE38)
+[LOG] SoundI::release                          :     Ordenador (0000017653007198)
 [LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
