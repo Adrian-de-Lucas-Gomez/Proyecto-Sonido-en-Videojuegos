@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="MixerGroup" id="{86211f5a-555f-41df-813b-a2b29ac20050}">
+		<property name="name">
+			<value>SonidosDelCoche</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{943769bf-87d9-4718-ab00-0089542fe98f}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{4d331760-733d-47e8-98fe-a9f684b2458c}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{b5c2b634-49b1-40ff-9ef6-85b6e02147d2}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{943769bf-87d9-4718-ab00-0089542fe98f}">
+		<relationship name="effects">
+			<destination>{8c8f6ef5-64b1-47c7-b168-cbfde49a6f7d}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{4d331760-733d-47e8-98fe-a9f684b2458c}" />
+	<object class="MixerBusFader" id="{8c8f6ef5-64b1-47c7-b168-cbfde49a6f7d}" />
+</objects>

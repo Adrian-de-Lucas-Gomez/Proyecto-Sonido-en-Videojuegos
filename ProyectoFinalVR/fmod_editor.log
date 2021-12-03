@@ -2,18 +2,131 @@
 [LOG] Manager::init                            : maxchannels = 256 studioflags = 00000006 flags 00000000 extradriverdata 0000000000000000.
 [LOG] SystemI::init                            : Initialize version=20111 (118066), maxchannels=256, flags=0x00020000
 [LOG] SystemI::setOutputInternal               : Setting output to 'FMOD WASAPI Output'
-[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEX): wFormatTag=0xFFFE, nChannels=2, nSamplesPerSec=48000, nAvgBytesPerSec=384000, nBlockAlign=8, wBitsPerSample=32, cbSize=22.
+[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEX): wFormatTag=0xFFFE, nChannels=2, nSamplesPerSec=44100, nAvgBytesPerSec=352800, nBlockAlign=8, wBitsPerSample=32, cbSize=22.
 [LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEXTENSIBLE): wValidBitsPerSample=32, dwChannelMask=0x00000003, SubFormat=00000003-0000-0010-8000-00AA00389B71.
-[LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
+[LOG] OutputWASAPI::init                       : Output buffer size: 3760 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
+[LOG] SystemI::init                            : Output requires a sample rate of 44100Hz, resampling will occur.
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 00000213001F44E8 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 0000020B622E12B8 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] PlaybackSystem::init                     : done
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 3
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 3
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000020B8B74FB18
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000020B8B74FB18
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000020B8B74FCC8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000020B8B74FCC8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000020B8B74FCC8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000020B8B74FCC8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000020B8B74FCC8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000020B8B74FCC8
+[LOG] SystemI::createSound                     : filename = ../ProyectoSonido/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000020B8C1297B8 : node = 0000020B1E870280
+[LOG] SystemI::createSound                     : add node to async list : head = 0000020B1D8EB4C8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000020B8C1297B8
+[LOG] SystemI::createSoundInternal             :     Create name='../ProyectoSonido/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4758912
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 21472
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000020B1E870390
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 4000
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='SonidoTele', format=5, channels=2, frequency=48000, lengthbytes=1004032, lengthpcm=5570977, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.188019.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000020B8C1297B8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000020B8B74FB18
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000020B8B74FB18
+[LOG] SoundI::release                          : SonidoTele (0000020B8B74F968)
+[LOG] SoundI::release                          :     SonidoTele (0000020B1107B358)
+[LOG] SoundI::release                          :     SonidoTele (0000020B8B74FCC8)
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000020B8C129B18
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000020B8C129B18
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000020B8B74FB18
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000020B8B74FB18
+[LOG] SystemI::createSound                     : filename = ../ProyectoSonido/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000020B8C12DCE8 : node = 0000020B1DE2C090
+[LOG] SystemI::createSound                     : add node to async list : head = 0000020B1D8EB4C8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000020B8C12DCE8
+[LOG] SystemI::createSoundInternal             :     Create name='../ProyectoSonido/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4758912
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 21472
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000020B1DE2C1A0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 60500
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Pajaros', format=5, channels=2, frequency=48000, lengthbytes=1186880, lengthpcm=4567875, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.732971.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000020B8C12DCE8
+[LOG] SoundI::release                          : Pajaros (0000020B8B752548)
+[LOG] SoundI::release                          :     Pajaros (0000020B1107ACD8)
+[LOG] SoundI::release                          :     Pajaros (0000020B8B74AA18)
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000020B8C129B18
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000020B8C129B18
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000020B8B74FB18
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000020B8B74FB18
+[LOG] SystemI::createSound                     : filename = ../ProyectoSonido/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000020B8C12CF68 : node = 0000020B1CC8A2E0
+[LOG] SystemI::createSound                     : add node to async list : head = 0000020B1D8EB4C8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000020B8C12CF68
+[LOG] SystemI::createSoundInternal             :     Create name='../ProyectoSonido/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4758912
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 21472
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000020B1CC8A3F0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 4000
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='SonidoTele', format=5, channels=2, frequency=48000, lengthbytes=1004032, lengthpcm=5570977, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.188019.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000020B8C12CF68
+[LOG] SoundI::release                          : SonidoTele (0000020B8C12CF68)
+[LOG] SoundI::release                          :     SonidoTele (0000020B1107A178)
+[LOG] SoundI::release                          :     SonidoTele (0000020B8C12C6F8)
+[LOG] SoundI::release                          : SonidoTele (0000020B8C1297B8)
+[LOG] SoundI::release                          :     SonidoTele (0000020B162185C8)
+[LOG] SoundI::release                          :     SonidoTele (0000020B8C129B18)
+[LOG] SoundI::release                          : Pajaros (0000020B8C12DCE8)
+[LOG] SoundI::release                          :     Pajaros (0000020B1107A4B8)
+[LOG] SoundI::release                          :     Pajaros (0000020B8C129E78)
+[LOG] SoundI::release                          : Wind (0000020B8B751108)
+[LOG] SoundI::release                          :     Wind (0000020B1107BB78)
+[LOG] SoundI::release                          :     Wind (0000020B8B74DCB8)
+[LOG] SoundI::release                          : Pajaros (0000020B8B750898)
+[LOG] SoundI::release                          :     Pajaros (0000020B11079E38)
+[LOG] SoundI::release                          :     Pajaros (0000020B8B74FB18)
+[LOG] SoundI::release                          :  (0000020B1E57C918)
+[LOG] SoundI::release                          :     MotorCoche (0000020B12D37C18)
+[LOG] SoundI::release                          :  (0000020B1E57C078)
+[LOG] SoundI::release                          :     Ordenador (0000020B12D373F8)
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] SystemI::close                           : Closed.
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)

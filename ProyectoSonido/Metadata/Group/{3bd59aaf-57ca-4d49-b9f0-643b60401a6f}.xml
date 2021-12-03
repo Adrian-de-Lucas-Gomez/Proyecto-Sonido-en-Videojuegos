@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="MixerGroup" id="{3bd59aaf-57ca-4d49-b9f0-643b60401a6f}">
+		<property name="name">
+			<value>RuidoPajaros</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{4782408d-004e-4d6c-9729-333ca97d8d29}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{f116f8b6-c6ca-4213-8315-26479d1ccdf0}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{b5c2b634-49b1-40ff-9ef6-85b6e02147d2}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{4782408d-004e-4d6c-9729-333ca97d8d29}">
+		<relationship name="effects">
+			<destination>{36033061-9182-490e-8157-682644f5130f}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{f116f8b6-c6ca-4213-8315-26479d1ccdf0}" />
+	<object class="MixerBusFader" id="{36033061-9182-490e-8157-682644f5130f}" />
+</objects>

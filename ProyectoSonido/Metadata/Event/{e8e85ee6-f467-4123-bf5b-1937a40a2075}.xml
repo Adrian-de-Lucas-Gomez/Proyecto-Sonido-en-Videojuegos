@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="Event" id="{e8e85ee6-f467-4123-bf5b-1937a40a2075}">
 		<property name="name">
-			<value>Birds</value>
+			<value>Birds1</value>
 		</property>
 		<property name="outputFormat">
 			<value>2</value>
@@ -53,7 +53,7 @@
 			<destination>{b589d372-1a68-41fd-9b47-1fa566da5b0d}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{4d3d99f8-6f50-497d-84cd-18b5154481cd}</destination>
+			<destination>{3bd59aaf-57ca-4d49-b9f0-643b60401a6f}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{9e9aff10-1999-4323-a0b2-5517829d84f5}" />
@@ -93,7 +93,10 @@
 	<object class="MixerBusPanner" id="{b589d372-1a68-41fd-9b47-1fa566da5b0d}" />
 	<object class="SingleSound" id="{722a4bf8-c2c1-47d4-b031-7ce117705dbe}">
 		<property name="length">
-			<value>95.164081632653065</value>
+			<value>91.164081632653065</value>
+		</property>
+		<property name="timelockedOffset">
+			<value>4</value>
 		</property>
 		<relationship name="audioFile">
 			<destination>{74b374a0-cdc0-482e-8a60-3c34d041eb0f}</destination>
@@ -118,7 +121,7 @@
 			<value>0</value>
 		</property>
 		<property name="length">
-			<value>95.164081632653065</value>
+			<value>91.164081632653065</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{cfa9e91a-28c2-4071-8b52-b649e068b23e}</destination>
@@ -142,6 +145,10 @@
 	</object>
 	<object class="MixerBusPanner" id="{03ce2be9-4105-4918-8bb5-591689c49b2b}" />
 	<object class="MixerBusFader" id="{10d48ea1-7dfb-4251-b661-571a4c0630c3}" />
-	<object class="SpatialiserEffect" id="{1355bdc8-f93f-4bd2-83e6-9bfba6821f7c}" />
+	<object class="SpatialiserEffect" id="{1355bdc8-f93f-4bd2-83e6-9bfba6821f7c}">
+		<property name="maximumDistance">
+			<value>13</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{e898a0d0-85ef-448c-8224-5591eeffe618}" />
 </objects>
