@@ -12,7 +12,10 @@ public class CollisionSound : MonoBehaviour
     private bool exeecedTreshold = false;
     private Rigidbody rb = null;
     [SerializeField]
-    private float velocityForSound = 0.5f;
+    private float velocityForSound = 0.3f;
+    [SerializeField]
+    private float maxSpeedForSound = 1.15f;
+    private float velocityBeforeCollision;
 
     public void Start()
     {
@@ -30,17 +33,29 @@ public class CollisionSound : MonoBehaviour
     public void Update()
     {
         if (!exeecedTreshold) exeecedTreshold = rb.velocity.magnitude > velocityForSound;
+        if (exeecedTreshold) velocityBeforeCollision = rb.velocity.magnitude;
     }
 
     private void OnCollisionEnter(Collision collision)
     {
         if (exeecedTreshold)
         {
+            //Debug.Log(rb.velocity.magnitude);
             hasBeenDropped = false;
             exeecedTreshold = false;
             instance = FMODUnity.RuntimeManager.CreateInstance(Event);
             if (instance.start() != FMOD.RESULT.OK) Debug.Log("Couldn't play sound: " + Event);
-            else FMODUnity.RuntimeManager.AttachInstanceToGameObject(instance, GetComponent<Transform>(), GetComponent<Rigidbody>());
+            else
+            {
+                FMODUnity.RuntimeManager.AttachInstanceToGameObject(instance, GetComponent<Transform>(), GetComponent<Rigidbody>());
+                instance.setParameterByName("ItemVelocity", calculateSpeedVariable());
+            }
         }
+    }
+
+    private float calculateSpeedVariable()
+    {
+        if (velocityBeforeCollision >= maxSpeedForSound) return 10.0f;
+        else return velocityBeforeCollision / maxSpeedForSound * 10.0f;
     }
 }
