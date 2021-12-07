@@ -33,6 +33,7 @@
 		</relationship>
 		<relationship name="parameters">
 			<destination>{29ce4e16-6ea3-45e5-b2e2-6d452a4aedd4}</destination>
+			<destination>{f583cd34-3dce-4eb4-8bae-60dbf1c095cd}</destination>
 		</relationship>
 		<relationship name="banks">
 			<destination>{8e223b19-39db-4767-9221-bdbf11644294}</destination>
@@ -82,6 +83,11 @@
 			<destination>{9fd32d28-a307-4132-9294-0b968612f556}</destination>
 		</relationship>
 	</object>
+	<object class="ParameterProxy" id="{f583cd34-3dce-4eb4-8bae-60dbf1c095cd}">
+		<relationship name="preset">
+			<destination>{ed7f6d4b-6d2b-4568-9de8-ad4b913a0388}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerMaster" id="{be8e72e7-d586-4b0f-99e4-db50920ba5a5}">
 		<relationship name="effectChain">
 			<destination>{119da9a6-e465-400a-9bf1-e85e620cfb0b}</destination>
@@ -108,6 +114,9 @@
 		<property name="length">
 			<value>0.02</value>
 		</property>
+		<relationship name="modulators">
+			<destination>{2a9285bc-bfd9-4222-a8d8-e3107ee95f0b}</destination>
+		</relationship>
 		<relationship name="sound">
 			<destination>{75da96fa-a0f2-40e8-8023-beef62d57db3}</destination>
 		</relationship>
@@ -142,6 +151,14 @@
 	</object>
 	<object class="MixerBusPanner" id="{22187b7f-98df-4f20-afe9-9dac2ffaca42}" />
 	<object class="MixerBusFader" id="{a990807d-6bfd-4c45-93f6-364c72312d30}" />
+	<object class="RandomizerModulator" id="{2a9285bc-bfd9-4222-a8d8-e3107ee95f0b}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>pitch</value>
+		</property>
+		<property name="amount">
+			<value>20.8333321</value>
+		</property>
+	</object>
 	<object class="MultiSound" id="{75da96fa-a0f2-40e8-8023-beef62d57db3}">
 		<relationship name="sounds">
 			<destination>{ee292896-959b-4d5b-a3fb-1af37ce47aae}</destination>
@@ -201,7 +218,7 @@
 			<value>0</value>
 		</property>
 		<property name="value">
-			<value>-34</value>
+			<value>-36.2458</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{1fb4548a-0738-4062-97ec-029b6fc09a32}">
@@ -209,7 +226,7 @@
 			<value>10</value>
 		</property>
 		<property name="value">
-			<value>5</value>
+			<value>-4.23304367</value>
 		</property>
 	</object>
 </objects>
