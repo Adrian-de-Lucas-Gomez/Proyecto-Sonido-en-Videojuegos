@@ -98,15 +98,15 @@
 		<property name="quantizationInterval">
 			<value>2</value>
 		</property>
-		<property name="volume">
-			<value>10</value>
-		</property>
 		<property name="totalSounds">
 			<value>1</value>
 		</property>
 		<property name="maximumTimeBetweenSounds">
 			<value>3500</value>
 		</property>
+		<relationship name="modulators">
+			<destination>{618835e8-1d86-4712-8ed9-0813727ca042}</destination>
+		</relationship>
 		<relationship name="sound">
 			<destination>{a2026c29-de82-4eee-9b64-b09cba16f447}</destination>
 		</relationship>
@@ -133,6 +133,14 @@
 	</object>
 	<object class="MixerBusPanner" id="{65ce23db-93fa-4994-be61-a3b288f56321}" />
 	<object class="MixerBusFader" id="{1f8d5ab0-4212-447d-9c20-1912bf550dcb}" />
+	<object class="RandomizerModulator" id="{618835e8-1d86-4712-8ed9-0813727ca042}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>pitch</value>
+		</property>
+		<property name="amount">
+			<value>20.8333321</value>
+		</property>
+	</object>
 	<object class="MultiSound" id="{a2026c29-de82-4eee-9b64-b09cba16f447}">
 		<relationship name="sounds">
 			<destination>{41112716-7e2d-459f-9c9d-a5335f3b8aef}</destination>
