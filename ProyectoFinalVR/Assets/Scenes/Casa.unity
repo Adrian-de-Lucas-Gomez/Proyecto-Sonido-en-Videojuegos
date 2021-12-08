@@ -1864,7 +1864,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5957461b9ed3c24cb2e525c03ea5342, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Event: event:/PrinterCollSound
+  Event: event:/DropCoffee
   velocityForSound: 0.5
   maxSpeedForSound: 5
 --- !u!1001 &98941112
