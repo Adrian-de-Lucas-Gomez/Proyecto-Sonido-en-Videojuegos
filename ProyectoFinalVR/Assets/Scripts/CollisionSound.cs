@@ -14,9 +14,9 @@ namespace Sonido
         private bool exeecedTreshold = false;
         private Rigidbody rb = null;
         [SerializeField]
-        private float velocityForSound = 0.3f;
+        private float velocityForSound = 0.5f;
         [SerializeField]
-        private float maxSpeedForSound = 1.15f;
+        private float maxSpeedForSound = 5.0f;
         private float velocityBeforeCollision;
 
         public void Start()
@@ -51,8 +51,16 @@ namespace Sonido
                 {
                     FMODUnity.RuntimeManager.AttachInstanceToGameObject(instance, GetComponent<Transform>(), GetComponent<Rigidbody>());
                     instance.setParameterByName("ItemVelocity", calculateSpeedVariable());
-                    SurfaceID surfaceType = collision.gameObject.GetComponent<SurfaceIDComponent>().getType();
-                    instance.setParameterByName("SurfaceType", (float)surfaceType);
+                    
+                    if (collision.gameObject.GetComponent<SurfaceIDComponent>() != null)
+                    {
+                        SurfaceID surfaceType = collision.gameObject.GetComponent<SurfaceIDComponent>().getType();
+                        instance.setParameterByName("SurfaceType", (float)surfaceType);
+                    }
+                    else
+                    {
+                        instance.setParameterByName("SurfaceType", 4.0f);
+                    }
                 }
             }
         }

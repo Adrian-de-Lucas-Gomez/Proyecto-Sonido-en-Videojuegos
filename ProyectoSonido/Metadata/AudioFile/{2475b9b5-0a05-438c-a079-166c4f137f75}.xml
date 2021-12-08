@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{2475b9b5-0a05-438c-a079-166c4f137f75}">
+		<property name="assetPath">
+			<value>vajilla_Troceados/vajillaEncimera_1.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.57599999999999996</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{1a8553a4-f98a-4346-8ca7-b6ea7f56e485}</destination>
+		</relationship>
+	</object>
+</objects>

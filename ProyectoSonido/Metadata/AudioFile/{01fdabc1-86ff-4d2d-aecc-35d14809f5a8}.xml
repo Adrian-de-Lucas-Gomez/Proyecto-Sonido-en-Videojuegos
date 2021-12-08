@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{01fdabc1-86ff-4d2d-aecc-35d14809f5a8}">
+		<property name="assetPath">
+			<value>Olla_Troceados/OllaBaño_3.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.95999999999999996</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{1a8553a4-f98a-4346-8ca7-b6ea7f56e485}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{e1a5daf5-8eab-4ee8-8d8e-24d5b7c3f56d}">
+		<property name="assetPath">
+			<value>Olla_Troceados/OllaSueloMadera_3.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.95999999999999996</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{1a8553a4-f98a-4346-8ca7-b6ea7f56e485}</destination>
+		</relationship>
+	</object>
+</objects>

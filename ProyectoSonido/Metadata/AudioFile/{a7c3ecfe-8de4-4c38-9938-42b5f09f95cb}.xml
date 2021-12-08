@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{a7c3ecfe-8de4-4c38-9938-42b5f09f95cb}">
+		<property name="assetPath">
+			<value>Banana_Troceados/BananaBaño_2.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.624</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{1a8553a4-f98a-4346-8ca7-b6ea7f56e485}</destination>
+		</relationship>
+	</object>
+</objects>

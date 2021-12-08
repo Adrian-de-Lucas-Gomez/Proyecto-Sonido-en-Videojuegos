@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="EncodableAsset" id="{e3c98154-e4a0-469d-98a4-6f008aef3970}">
+		<property name="assetPath">
+			<value>tetera_Troceados/</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{1a8553a4-f98a-4346-8ca7-b6ea7f56e485}</destination>
+		</relationship>
+	</object>
+</objects>
