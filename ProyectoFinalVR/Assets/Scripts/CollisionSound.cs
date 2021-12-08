@@ -10,7 +10,6 @@ namespace Sonido
         [EventRef]
         public string Event = "";
         protected private FMOD.Studio.EventInstance instance;
-        private bool hasBeenDropped = false;
         private bool exeecedTreshold = false;
         private Rigidbody rb = null;
         [SerializeField]
@@ -26,10 +25,7 @@ namespace Sonido
 
         public void dropFromHand()
         {
-            //hasBeenDropped = true;
 
-
-            //lol
         }
 
         public void Update()
@@ -43,7 +39,6 @@ namespace Sonido
             if (exeecedTreshold)
             {
                 //Debug.Log(rb.velocity.magnitude);
-                hasBeenDropped = false;
                 exeecedTreshold = false;
                 instance = FMODUnity.RuntimeManager.CreateInstance(Event);
                 if (instance.start() != FMOD.RESULT.OK) Debug.Log("Couldn't play sound: " + Event);
