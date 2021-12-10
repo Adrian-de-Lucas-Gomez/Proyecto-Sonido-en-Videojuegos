@@ -5,7 +5,7 @@
 			<value>Wind</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{ba5f0664-c31b-4dd3-959e-968f6b202d5b}</destination>
@@ -133,6 +133,7 @@
 	<object class="MixerBusEffectChain" id="{64d94e93-77a3-4322-a38d-fa92fdda1f57}">
 		<relationship name="effects">
 			<destination>{c1f3fd22-d272-4582-ba91-f442d1b7e196}</destination>
+			<destination>{f07d1428-208c-43c0-8268-6999c04ce777}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{3f56a975-c944-4be1-b13b-6ea8acd92cd5}" />
@@ -144,5 +145,6 @@
 	</object>
 	<object class="MixerBusPanner" id="{03274a88-c295-4b9a-8e3e-fbe6e172e371}" />
 	<object class="MixerBusFader" id="{c1f3fd22-d272-4582-ba91-f442d1b7e196}" />
+	<object class="SpatialiserEffect" id="{f07d1428-208c-43c0-8268-6999c04ce777}" />
 	<object class="MixerBusFader" id="{0aaeebce-9384-4220-90b3-76dcd6c790e7}" />
 </objects>
