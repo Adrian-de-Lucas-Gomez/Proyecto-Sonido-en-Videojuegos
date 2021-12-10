@@ -195,6 +195,7 @@
 		<relationship name="effects">
 			<destination>{e19ba0d3-84bb-4ac1-828c-cbe484ec0dec}</destination>
 			<destination>{01209c14-f17f-4fd5-8ea0-2cd0c9362c5e}</destination>
+			<destination>{9b4e87d1-d811-4dc6-a889-ea7527896b7f}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{18bdc00b-e93e-4301-895c-067aea162df7}" />
@@ -295,6 +296,11 @@
 	<object class="MixerBusPanner" id="{2861b719-b883-4acc-bf1f-99bcba7473b5}" />
 	<object class="MixerBusFader" id="{e19ba0d3-84bb-4ac1-828c-cbe484ec0dec}" />
 	<object class="SpatialiserEffect" id="{01209c14-f17f-4fd5-8ea0-2cd0c9362c5e}" />
+	<object class="PitchShifterEffect" id="{9b4e87d1-d811-4dc6-a889-ea7527896b7f}">
+		<property name="pitch">
+			<value>1.22000003</value>
+		</property>
+	</object>
 	<object class="AutomationCurve" id="{999f2298-88ae-4dd6-bc2c-ec70dc32bfb6}">
 		<relationship name="parameter">
 			<destination>{9fd32d28-a307-4132-9294-0b968612f556}</destination>
